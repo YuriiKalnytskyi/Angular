@@ -1,0 +1,13 @@
+<h4>Post {{post.id}}</h4>
+<div>
+  <ul>
+    <li>
+      Title -{{post.title}} <br/>
+      Body - {{post.body}}<br/>
+      <h4>Comment</h4>
+      <app-comments [id]="post.id"></app-comments>
+    </li>
+  </ul>
+  <br/>
+
+</div>

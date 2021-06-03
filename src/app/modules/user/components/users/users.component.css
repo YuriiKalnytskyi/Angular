@@ -1,0 +1,10 @@
+.users{
+  display: flex;
+  width: 100%;
+}
+.user{
+  width: 50%;
+}
+.user-detail{
+  width: 50%;
+}

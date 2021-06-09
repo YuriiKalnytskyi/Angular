@@ -11,7 +11,7 @@ export class SelectDetailComponent implements OnInit {
   @Input()
   post:Post[]
 
-  constructor(private userService :UserService) {
+  constructor() {
   }
 
   ngOnInit(): void {

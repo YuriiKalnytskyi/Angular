@@ -9,7 +9,7 @@ import {Post} from "../models/post";
 })
 export class UserService {
   private url = 'https://jsonplaceholder.typicode.com/users'
-  private url1 = 'https://jsonplaceholder.typicode.com/posts'
+  private url1 = 'https://jsonplaceholder.typicode.com/posts?userId='
 
 
 
@@ -18,7 +18,7 @@ export class UserService {
     return this.httpClient.get<User[]>(this.url)
   }
   getPost(id:number):Observable<Post[]>{
-    return this.httpClient.get<Post[]>(`${this.url1}?userId=${id}`)
+    return this.httpClient.get<Post[]>(this.url1 + id)
   }
 
 }

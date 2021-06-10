@@ -1,0 +1,16 @@
+
+<form [formGroup]="myForm"  (ngSubmit)="save()">
+  <label>model</label>
+  <input type="text" [formControl]="modelControl"><br/>
+
+  <label>price</label>
+  <input type="number" [formControl]="priceControl"><br/>
+
+  <label>year</label>
+  <input type="number" [formControl]="yearControl">
+  <button>save</button>
+</form>
+<div *ngFor="let car of cars">
+  {{car|json}}
+
+</div>
